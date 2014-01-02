@@ -1,0 +1,25 @@
+!!!
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+
+    %link(rel="stylesheet" href="/vendor/base.css")
+    = javascript_include_tag 'handlebars-v1.1.2'
+    = javascript_include_tag 'application'
+
+  %body
+    %main
+
+  %script(id="user-template" type="text/x-handlebars-template")
+    %table
+      {{#each measures}}
+      %tr
+        %td {{this.date}}
+        %td {{this.weight}} kg
+      {{/each}}
+
+    .new-measure
+      %input(type="text" id="new-date-field")
+      %input(type="text" id="new-weight-field" size=5)
+      %input(type="button" id="add-new-measure-button" value="Add")
