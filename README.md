@@ -1,6 +1,6 @@
-# opal-todos
+# opal-measure-spa
 
-A very simple port of [TodoMVC](http://todomvc.com) (specifically based on backbone version).
+Nothing interesting yet...
 
 ## Running
 
